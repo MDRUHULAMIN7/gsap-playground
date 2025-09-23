@@ -1,0 +1,23 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.box1,
+.box2,
+.box3 {
+    width: 100px;
+    height: 100px;
+    background-color: #00f100;
+
+    margin: 10px;
+}
