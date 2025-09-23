@@ -1,7 +1,6 @@
 // gsap.to() – এই মেথডটি ব্যবহার করা হয় element কে **বর্তমান অবস্থান থেকে লক্ষ্য অবস্থানে animate করার জন্য**।
 // এখানে .circle element কে (x:500, y:300) এ 3 সেকেন্ডে সরানো হবে
 
-
 // gsap.to(".circle", {
 //     x: 500,
 //     y: 300,
@@ -39,9 +38,35 @@
 //   y: 300,
 // });
 
-gsap.from(".circle", {
-  x: 500,
+gsap.to(".circle", {
+  x: 1500,
+  duration: 2,
+  delay: 1,
+  rotate: 360,
+  backgroundColor: "#09ff00ff",
+});
+
+gsap.from(".circle2", {
+  x: 1500,
+  duration: 2,
+    delay: 1,
+    rotate: 360,
+  backgroundColor: "#09ff00ff",
+});
+gsap.fromTo(
+  ".circle3",
+  {
+    x: 1200,
+    y: 1500,
+    duration: 2,
+    delay: 1,
+  },
+  {
+    x: 1500,
     y: 0,
     duration: 2,
-  delay: 1,
-});
+    delay: 1,
+    rotate: 360,
+    backgroundColor: "#09ff00ff",
+  }
+);
