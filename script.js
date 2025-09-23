@@ -39,15 +39,16 @@
 // });
 
 gsap.to(".circle", {
-  x: 1500,
+  x: 500,
   duration: 2,
-  delay: 1,
+  delay: 2,
   rotate: 360,
   backgroundColor: "#09ff00ff",
+   borderRadius: "50%",
 });
 
 gsap.from(".circle2", {
-  x: 1500,
+  x: 500,
   duration: 2,
     delay: 1,
     rotate: 360,
@@ -56,17 +57,33 @@ gsap.from(".circle2", {
 gsap.fromTo(
   ".circle3",
   {
-    x: 1200,
-    y: 1500,
+    x: 100,
+    y: 100,
     duration: 2,
     delay: 1,
+    yoyo: true,
   },
   {
-    x: 1500,
+    x: 500,
     y: 0,
     duration: 2,
     delay: 1,
     rotate: 360,
+    yoyo: true,
     backgroundColor: "#09ff00ff",
   }
 );
+
+
+gsap.from("h1", {
+    opacity: 0,
+    duration: 2,
+    delay: 2,
+    y: 50,
+    color: "#3f62ffff",
+    stagger: 1,
+    repeat: -1,
+    yoyo: true,
+  
+    
+})
